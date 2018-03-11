@@ -1,6 +1,8 @@
 # Werd
-Aspx human vaidation bounce page which can be used with php forums like wordpress, phpbbs and drupal.
+Aspx human validation bounce page which can be used with php forums like wordpress, phpbbs and drupal or inline forms.
+
 It can be used as either a session/cookie based bounce page or within a form to control access to the final submission button or panel.
+
 # Bounce Example 1
 ![Bounce Example 1](https://github.com/abitowhit/Werd/blob/master/werdshot.png)
 
@@ -23,8 +25,15 @@ Can be used to control a specific form within a site or generally as a bounce pa
 
 Though I have not yet set it up this way, it can be launched specifically for page URL paths such as logins, admin, etc.
 
+For bounce pages, a cookie is set.  In the php method, if cookie does not exist it forwards to the werd aspx landing page.
+The Werd aspx page sets the cookie and forwards back to the landing page configured in the web.config file.
+If cookie is already set, php continues on the the php page.
+
+For form pages, button or panel is hidden from view if session/cookie is not set.  Within form, Werd sets the cookie/session and then displays the panel or button.  Ajax makes the form senerio fairly seemless.
+
 ## Platform
-php,.net,c#
+Written in C# and .net 4.5.
+PHP for bounce page plugins.
 
 ## Software Options
 
@@ -41,6 +50,8 @@ The program is  written in c# using .net libraries. PHP interface to .net landin
 Requirements:
 
 * .net 4.5 but will probalby work with other libs. Nothing really .net version specific.
+* Installation of werd directory and files on IIS server and set as an application so that it processes the aspx page.
+
 
     To come..
     
@@ -50,15 +61,17 @@ Requirements:
 GNU General Public License version 3.0 (GPLv3) (https://www.gnu.org/licenses/gpl-3.0.de.html)
 
 ## Limitations
+* When used as full bounce page, it may deter crawlers from registering content on the site.  This is where specific URL path limiting can be beneficial.
+* Requires IIS server with .net.
+* Will not run on apache and other web hosts, but can be leveraged by them.
 
-Multiple solutions:
+## Multiple solutions:
 
 * Use where you want actual human input to access specific or general web access.
 * In form
 * Bounce page (forums, bbs)
-* When used as full bounce page, it may deter crawlers from registering content on the site.  This is where specific URL path limiting can be beneficial.
 
 ## References:
- * [Werd(http://247coding.com/drupal/?q=node/9)
+ * [Werd](http://247coding.com/drupal/?q=node/9) Werd Docs on 247Coding.com
  
 
