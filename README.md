@@ -7,7 +7,7 @@ It can be used as either a session/cookie based bounce page or within a form to 
 # Bounce Example 2
 ![Bounce Example 2](https://github.com/abitowhit/Werd/blob/master/werdshot2.png)
 
-# Bounce Example 3
+# Inline Form Example
 ![Form Example](https://github.com/abitowhit/Werd/blob/master/werdshotform.png)
 
 ## Overview
