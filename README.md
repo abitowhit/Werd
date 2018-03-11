@@ -2,9 +2,9 @@
 Aspx human vaidation bounce page which can be used with php forums like wordpress, phpbbs and drupal.
 It can be used as either a session/cookie based bounce page or within a form to control access to the final submission button or panel.
 
-![Bounce Example 1](werdshot.png.png)
-![Bounce Example 2](werdshot2.png.png)
-![Form Example](werdshotform.png.png)
+![Bounce Example 1](https://github.com/abitowhit/Werd/blob/master/werdshot.png)
+![Bounce Example 2](https://github.com/abitowhit/Werd/blob/master/werdshot2.png.png)
+![Form Example](https://github.com/abitowhit/Werd/blob/master/werdshotform.png.png)
 
 ## Overview
 Werd is a captcha type solution which uses pseudo generated sentences with only one actual solution.
