@@ -32,8 +32,8 @@ If cookie is already set, php continues on the the php page.
 For form pages, button or panel is hidden from view if session/cookie is not set.  Within form, Werd sets the cookie/session and then displays the panel or button.  Ajax makes the form senerio fairly seemless.
 
 ## Platform
-Written in C# and .net 4.5.
-PHP for bounce page plugins.
+c#
+php
 
 ## Software Options
 
